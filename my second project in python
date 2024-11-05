@@ -1,0 +1,6 @@
+name_1 = input("type the length \n ")
+name_2 = input("type the width \n ")
+name_3 = input('how much for 1 meter \n ')
+print ("the total erea is :" + str(float(name_1) * float(name_2)))
+erea = float(name_1) * float(name_2)
+print("give the guy :" + str(erea * float(name_3)) + "$") 
