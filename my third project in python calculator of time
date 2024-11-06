@@ -4,3 +4,6 @@ seconds_reste  = int(seconds) % 3600
 minuts = seconds_reste // 60
 seconds_1 = seconds_reste % 60
 print ("your full structure of  time is :\n " + str(hours) + " hours and " + str(minuts) + " minuts and "  + str(seconds_1) + " seconds." )
+#or you can do it by another way :
+x = int(input("entre the number of seconds : \n "))
+print (f"the duration is :\n {x // 3600} hours and {(x % 3600) // 60 } minuts and  {(x % 3600) % 60} seconds " )
