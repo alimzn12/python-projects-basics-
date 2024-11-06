@@ -1,0 +1,6 @@
+seconds = input( "pleas type the number of seconds : \n" )
+hours = int (seconds) // 3600
+seconds_reste  = int(seconds) % 3600
+minuts = seconds_reste // 60
+seconds_1 = seconds_reste % 60
+print ("your full structure of  time is :\n " + str(hours) + " hours and " + str(minuts) + " minuts and "  + str(seconds_1) + " seconds." )
