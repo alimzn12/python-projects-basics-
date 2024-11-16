@@ -1,0 +1,11 @@
+import random
+y = random.randint(1000,9999)
+x = input('Enter 4-digits PIN code : ')
+if len(x) == 4 :
+  if int(x) == y : 
+    print(f"congratulation , {x} is the right guess  " )
+  else :
+    print(f"{x} is not the right guess ")
+    print(f" {y} is the right guess ")
+else :
+  print('please enter a number of 4  digits ')
