@@ -1,0 +1,38 @@
+print('''░░░░░░░░░░░║
+░░▄█▀▄░░░░░║░░░░░░▄▀▄▄
+░░░░░░▀▄░░░║░░░░▄▀
+░▄▄▄░░░░█▄▄▄▄▄▄█░░░░▄▄▄
+▀░░░▀█░█▀░░▐▌░░▀█░█▀░░░▀
+░░░░░░██░░▀▐▌▀░░██
+░▄█▀▀▀████████████▀▀▀█
+█░░░░░░██████████░░░░░▀▄
+█▄░░░█▀░░▀▀▀▀▀▀░░▀█░░░▄█
+░▀█░░░█░░░░░░░░░░█░░░█▀
+''')
+print('''𝕨𝕖𝕝𝕔𝕠𝕞𝕖 𝕥𝕠 𝕞𝕪 𝕚𝕤𝕝𝕒𝕟𝕕''')
+print('''the purpose of this game is to find the treasure of onepeice 🪙 🏴‍☠️ 💰💰💰
+there ara two doors on front of you :🚪 a red door , 🚪 a blue door ''') 
+x = input("which door do you want to open :\n")
+if x.lower() == "red" :
+  print(''' great! now you entered a room .
+  you found three boxes : 🎁 white , 🎁 black , 🎁 green.''')
+  y = input("which box do you want to open ?\n" )
+  if y.lower() == "white" :
+    print("oops! you opened a box filled eith snakes 🐍🐍🐍")
+  elif y.lower() == "black" :
+    print("oops! you opened a box filled spiders🕸️🕷️🕸️🕷️🕸️🕷️🕸️🕷️")
+  elif y.lower() == "green" :
+    print(f"congratulation! you found the treasure!! 🎉🏅\n ")
+    v = input("please type open to open the treasure\n")
+    if v.lower() == "open" :
+      print("cheers for you you reach the end of this adventure you fin the onepeice by  open the treasure ,and the treasure is .....  ; a a lot of money  💰💰💰")
+    else :
+      print('''invalid choice 🙆‍♂️🙆🤷‍♂️🤷🙅‍♂️❌⁉️⁉️
+       please follow the instructions !!''')
+  else :
+    print("invalid choice 🙆‍♂️🙆🤷‍♂️🤷🙅‍♂️❌⁉️⁉️")
+elif x.lower() == "blue" :
+  print('''oops! you entered to a rood filled with crocodiles 🐊🐊🐊 🙆‍♂️🙆
+  game over !''')
+else :
+ print("please follow thw instructions")
