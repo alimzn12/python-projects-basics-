@@ -1,0 +1,55 @@
+print('''welcome to the coin  guessing game
+choose the method to toss thw coin :
+1.Using random.random()
+2.Using random,randint()''')
+input("plese press enter to start the game ....")
+x = int(input("please choose the way by 1 or 2 :\n "))
+import random
+d = random.randint(0,1)
+e = random.random()
+if x == 1 :
+  y = input("enter your guess (heads or tails ) : \n").lower()
+  import random
+  e = random.random()
+  if e>=0.5:
+    if y == "heads":
+      print("congratulations hero, you win !🥳🤩")
+      print("the computer guess was heads!") 
+    elif y == "tails" :
+      print('unfortunately you lost')
+      print("the computer's guess was heads !")
+    else :
+       print("please follow the instructions")
+  else :
+    if y == "tails" :
+      print("congratulations hero, you win !🥳🤩")
+      print("the computer guess was tails ! ")
+    elif y == "heads" :
+      print('unfortunately you lost')
+      print('the computer guess was tails ! ')
+    else :
+       print("please follow the instructions") 
+elif x == 2 :
+  y = input("enter your guess (heads or tails ) : \n").lower()
+  import random
+  o = random.randint(0,1)
+  if o == 0 :
+    if y == "heads" :
+      print("congratulations hero, you win !🥳🤩")
+      print("the computer guess was heads!")
+    elif y == "tails" :
+      print('unfortunately you lost')
+      print('the computer guess was heads !') 
+    else :
+       print("please follow the instructions")
+  else :
+    if y == "tails" :
+      print("congratulations hero, you win !🥳🤩")
+      print("the computer guess was tails ! ")
+    elif y == "heads" :
+      print('unfortunatelyyou lost')
+      print("the computer guess was tails ! ")  
+    else :
+       print("please follow the instructions")
+else :
+  print("plese chose 1 or 2")
