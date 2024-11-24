@@ -1,0 +1,13 @@
+x = input("add the firs color you like :")
+color = []
+color.append(x)
+y = input('''do you want to add another color ?
+ enter "yes" or "no" ''')
+if y.lower() == "yes" :
+  o = input("what color do you want to add to your list? ")
+  color.append(o)
+  print(f"{color} ;this is your list of colors that you like" )
+elif y.lower() == "no" :
+   print(f"{color} ;this is your list of colors that you like" )
+else :
+  print("please say yes or no ")
