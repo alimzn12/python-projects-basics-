@@ -1,0 +1,42 @@
+library = []
+wishlist = [] 
+x =  input('enter the name of your own book \n')
+library.append(x)
+y = input('enter the name of other book you own (or press enter to skip )\n')
+if y :
+  library.append(y)
+  print(f'you library is : {library}')
+
+else :
+  print(f'your library is :{library}')
+
+o = input("enter the name of a book you wish you have \n ") 
+wishlist.append(o)
+r = input('do you wanna add an other book to your wishlist\n')
+if r :
+  wishlist.append(r)
+  print(f'your wishlist is :{wishlist}')
+
+else :
+  print(f'your wish list is {wishlist}')
+
+q = input('enter name of book you had aquired from your wishlist (or press enter to skiop \n)')
+if q :
+  if q in wishlist :
+    wishlist.remove(q)
+    library,append(q)
+    print(f''' your lists after apdate :
+    library :{library}
+    wishlist :{wishlist} ''')
+  else :
+    print("you'd enter name of book that does not exist in your list ")
+
+
+w = input('enter name of book you wanna donate from your labrary (or press enter to skip\n')
+if w :
+  if w in library :
+    library.remove(w)
+    print(f'youe library after donation is : {library}')
+
+  else :
+    print('the book does not exist in you library')
